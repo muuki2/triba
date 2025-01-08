@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triba - Circle</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+        }
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            margin: 100px 20px 20px 20px;
+        }
+        .sideline {
+            width: 10px;
+            height: 600px;
+            transition: background-color 0.3s ease;
+        }
+        canvas {
+            border: 1px solid #333;
+            background-color: #000;
+            transition: box-shadow 0.3s ease;
+        }
+        .canvas-wrapper {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div id="leftLine" class="sideline"></div>
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+        <div id="rightLine" class="sideline"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
